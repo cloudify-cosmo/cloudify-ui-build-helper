@@ -22,9 +22,11 @@ _.each(files, function (f) {
     }, function (err, data) {
         if (err) {
             logger.error(err);
+            process.exit(1);
         }
         if (data) {
             logger.info(data);
+            process.exit(0);
         }
 
     });
