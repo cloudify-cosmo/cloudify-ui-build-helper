@@ -1,0 +1,21 @@
+{
+  "name": "cloudify-ui-build-helper",
+  "version": "1.0.0",
+  "description": "reusable scripts for build process",
+  "bin": {
+    "create-and-push-build-tag" : "create_and_push_build_tag.sh",
+    "get-unstable-s3-folder": "get_unstable_s3_folder.sh",
+    "get-stable-s3-folder" : "get_stable_s3_folder.sh",
+    "promote-unstable-to-stable": "promote_unstable_to_stable.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guy-mograbi-at-gigaspaces/cloudify-ui-build-helper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guy-mograbi-at-gigaspaces/cloudify-ui-build-helper/issues"
+  },
+  "homepage": "https://github.com/guy-mograbi-at-gigaspaces/cloudify-ui-build-helper#readme"
+}
