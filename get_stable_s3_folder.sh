@@ -27,4 +27,4 @@ if [ "${PROJECT_NAME}" == "" ];then
     exit 1
 fi
 
-echo "continuous-build/stable/${PROJECT_NAME}/${CFY_VERSION}-${CFY_PRERELEASE}-${CFY_BUILD_UID}"
+echo "continuous-build/stable/${PROJECT_NAME}/${CFY_VERSION}-${CFY_PRERELEASE}-${BUILD_UID}"
