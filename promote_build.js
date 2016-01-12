@@ -13,13 +13,18 @@ var files = process.env.S3_FILES.split(';');
 
 
 _.each(files, function (f) {
-    s3.copyObject({
+
+    var details = {
         Bucket: process.env.S3_BUCKET,
         CopySource: process.env.SOURCE_FOLDER + '/' + f,
         Key: process.env.DEST_FOLDER + '/' + f,
         ACL: 'public-read'
 
-    }, function (err, data) {
+    };
+
+    logger.info('copying', JSON.stringify(details,{},4));
+
+    s3.copyObject( details , function (err, data) {
         if (err) {
             logger.error(err);
             process.exit(1);
