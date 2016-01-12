@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 echoerr() { echo "$@" 1>&2; }
 
 if [ "${CFY_VERSION}" == "" ];then
