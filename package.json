@@ -6,7 +6,7 @@
     "create-and-push-build-tag" : "create_and_push_build_tag.sh",
     "get-unstable-s3-folder": "get_unstable_s3_folder.sh",
     "get-stable-s3-folder" : "get_stable_s3_folder.sh",
-    "promote-unstable-to-stable": "promote_unstable_to_stable.js"
+    "promote-build": "promote_build.js"
   },
   "repository": {
     "type": "git",
