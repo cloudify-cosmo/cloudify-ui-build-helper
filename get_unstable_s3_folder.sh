@@ -3,17 +3,17 @@
 echoerr() { echo "$@" 1>&2; }
 
 if [ "${CFY_VERSION}" == "" ];then
-    echoerr "get_unstable_s3_dist :: VERSION expected but missing"
+    echoerr "get_unstable_s3_dist :: CFY_VERSION expected but missing"
     exit 1
 fi
 
 if [ "${CFY_PRERELEASE}" == "" ];then
-    echoerr "get_unstable_s3_dist :: PRERELEASE expected but missing"
+    echoerr "get_unstable_s3_dist :: CFY_PRERELEASE expected but missing"
     exit 1
 fi
 
 if [ "${CFY_BUILD_NUMBER}" == "" ];then
-    echoerr "get_unstable_s3_dist :: BUILD_NUMBER expected but missing"
+    echoerr "get_unstable_s3_dist :: CFY_BUILD_NUMBER expected but missing"
     exit 1
 fi
 
