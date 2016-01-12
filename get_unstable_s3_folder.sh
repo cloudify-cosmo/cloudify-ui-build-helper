@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echoerr() { echo "$@" 1>&2; }
 
 if [ "${CFY_VERSION}" == "" ];then
     echoerr "get_unstable_s3_dist :: VERSION expected but missing"

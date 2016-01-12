@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/guy-mograbi-at-gigaspaces/cloudify-ui-build-helper#readme",
   "dependencies": {
-    "aws-sdk": "^2.2.28"
+    "aws-sdk": "^2.2.28",
+    "lodash": "^3.10.1"
   }
 }
