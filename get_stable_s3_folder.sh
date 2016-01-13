@@ -19,14 +19,9 @@ if [ "${CFY_BUILD_NUMBER}" == "" ];then
     exit 1
 fi
 
-if [ "${BUILD_UID}" == "" ];then
-    echoerr "get_unstable_s3_dist :: BUILD_ID expected but missing"
-    exit 1
-fi
-
 if [ "${PROJECT_NAME}" == "" ];then
     echoerr "get_unstable_s3_dist :: PROJECT_NAME expected but missing"
     exit 1
 fi
 
-echo "continuous-build/stable/${PROJECT_NAME}/${CFY_VERSION}-${CFY_PRERELEASE}-${BUILD_UID}"
+echo "continuous-build/stable/${PROJECT_NAME}/${CFY_VERSION}-${CFY_PRERELEASE}"
