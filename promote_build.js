@@ -16,7 +16,7 @@ _.each(files, function (f) {
 
     var details = {
         Bucket: process.env.S3_BUCKET,
-        CopySource: process.env.SOURCE_FOLDER + '/' + f,
+        CopySource: process.env.S3_BUCKET + '/' + process.env.SOURCE_FOLDER + '/' + f,
         Key: process.env.DEST_FOLDER + '/' + f,
         ACL: 'public-read'
 
