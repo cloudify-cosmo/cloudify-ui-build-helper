@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -e
 ## this script expects to be in the repository's clone
 ## and have all the required git configuration inplace
 
