@@ -29,5 +29,5 @@ fi
 
 export GIT_TAG="v${VERSION}-${PRERELEASE}-${BUILD_NUMBER}-${BUILD_ID}"
 
-git tag ${GIT_TAG} -m "automated build"
+git tag ${GIT_TAG} -m "automated build [ci skip]"
 git push origin --tags
